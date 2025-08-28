@@ -8,7 +8,7 @@ body {
 }
 
 body::selection {
-    background: rgba(180, 36, 36, 0.8);
+    background: rgba(4, 2, 2, 0.8);
     color: white;
 
 }
@@ -36,36 +36,34 @@ header strong {
 }
 
 nav {
-  list-style-type: none;
-  background-color: rgba(214, 27, 27);
-  margin: 0;
+    list-style-type: none;
+    background-color: rgba(214, 27, 27);
+    margin: 0;
 }
 
 nav a {
-  color: black;
-  text-decoration: none;
-  font-family: 'Chinese Rocks Rg', sans-serif;
-  font-size: 19px; /* 1.2em -> 19px */
+    color: black;
+    text-decoration: none;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 19px;
 }
 
 nav ul {
-  padding-left: 0;
-  margin-bottom: 0;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 nav li {
-  display: inline-block;
-  padding: 5px;
+    display: inline-block;
+    padding: 5px;
 }
 
-nav a:hover{
+nav a:hover {
     color: white;
 }
 
 nav a#atual {
     text-decoration: underline;
-    
-    
 }
 
 main {
@@ -89,7 +87,7 @@ main {
     font-size: 30px;
     padding: 20px 0 0 0;
     margin: 0;
-    
+
 }
 
 #personagens table {
@@ -100,7 +98,8 @@ main {
     overflow: hidden;
 }
 
-#personagens th, #personagens td {
+#personagens th,
+#personagens td {
     padding: 16px 12px;
     text-align: center;
     font-family: 'Chinese Rocks Rg', sans-serif;
@@ -110,7 +109,8 @@ main {
 
 #personagens th {
     background-color: #420c0cff;
-    font-size: 19px; /* 1.2em -> 19px */
+    font-size: 19px;
+    /* 1.2em -> 19px */
     letter-spacing: 1px;
 }
 
@@ -136,13 +136,60 @@ main {
     color: #fff;
 }
 
-
 #gameplay iframe {
     border-radius: 12px;
     border: 2px solid #b42424;
     width: 100%;
     max-width: 560px;
     height: 315px;
+}
+
+#voltar-topo:hover {
+    background: #b42424;
+    transform: scale(1.3);
+    color: #ffffffff;
+}
+
+#curiosidades {
+    margin: 0px auto;
+    padding: 0 24px;
+    max-width: 1000px;
+    color: #fff;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+#curiosidades h2 {
+    text-align: center;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 32px;
+    color: gold;
+    margin: 0;
+    padding: 20px;
+}
+
+#curiosidades ol {
+    padding: 24px;
+    margin: 0;
+    columns: 2;
+    column-gap: 40px;
+    column-rule: 2px solid rgba(130, 19, 19, 0.7);
+}
+
+#curiosidades li {
+    text-align: justify;
+    font-family: 'Hapna Slab Serif W00 DemiBold', sans-serif;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin-left: 24px;
+}
+
+#curiosidades li strong {
+    color: #ffd700;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 footer {
@@ -159,7 +206,9 @@ footer {
 #logo-rodape {
     float: left;
     width: 30px;
-    position: relative; left: 440px; bottom: -5px;
+    position: relative;
+    left: 440px;
+    bottom: -5px;
 }
 
 #voltar-topo {
@@ -168,8 +217,8 @@ footer {
     height: 50px;
     background: #790a0aff;
     color: #000000;
-    font-size: 32px; /* 2em -> 32px */
-    font-family:'Segoe UI';
+    font-size: 32px;
+    font-family: 'Segoe UI';
     text-align: center;
     border-radius: 10%;
     position: fixed;
@@ -179,10 +228,3 @@ footer {
     transition: background 0.3s, transform 0.3s;
     z-index: 1000;
 }
-
-#voltar-topo:hover {
-    background: #b42424;
-    transform: scale(1.3);
-    color: #ffffffff;
-}
-
