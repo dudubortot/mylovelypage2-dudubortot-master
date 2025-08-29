@@ -269,5 +269,4 @@ footer {
     bottom: 30px;
     text-decoration: none;
     transition: background 0.3s, transform 0.3s;
-    z-index: 1000;
 }
