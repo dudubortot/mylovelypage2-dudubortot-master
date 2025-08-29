@@ -8,18 +8,20 @@ body {
 }
 
 body::selection {
-    background: rgba(4, 2, 2, 0.8);
+    background: rgba(93, 22, 22, 0.8);
     color: white;
 
 }
 
 h1 {
     font-size: 32px;
+    margin: 20px auto;
 }
 
 h2 {
     font-size: 28px;
     font-weight: lighter;
+    margin: 20px auto;
 }
 
 header {
@@ -29,6 +31,15 @@ header {
     padding: 10px;
     font-family: 'Chinese Rocks Rg', sans-serif;
     padding: 10px 0 0 0;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header h2 {
+    font-size: 28px;
+    font-weight: lighter;
 }
 
 header strong {
@@ -45,7 +56,7 @@ nav a {
     color: black;
     text-decoration: none;
     font-family: 'Chinese Rocks Rg', sans-serif;
-    font-size: 19px;
+    font-size: 1.5em;
 }
 
 nav ul {
@@ -74,8 +85,8 @@ main {
 #introducao p {
     text-align: center;
     color: white;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    font-size: 20px;
+    font-family: 'Hapna Slab Serif W00 DemiBold', sans-serif;
+    font-size: 0.9em;
     padding: 20px 20px 20px 20px;
     margin: 0 80px 0 80px;
 }
@@ -84,7 +95,7 @@ main {
     text-align: center;
     color: white;
     font-family: 'Chinese Rocks Rg', sans-serif;
-    font-size: 30px;
+    font-size: 1em;
     padding: 20px 0 0 0;
     margin: 0;
 
@@ -109,8 +120,7 @@ main {
 
 #personagens th {
     background-color: #420c0cff;
-    font-size: 19px;
-    /* 1.2em -> 19px */
+    font-size: 1.2em;
     letter-spacing: 1px;
 }
 
@@ -119,6 +129,19 @@ main {
     transition: background 1s;
     transform: scale(1.01);
     transition: transform 0.3s;
+}
+
+#personagens td {
+    font-size: 0.7em;
+}
+
+#personagens td:nth-child(3) {
+    font-family: 'Hapna Slab Serif W00 DemiBold', sans-serif;
+}
+
+#personagens td:nth-child(2) {
+    font-size: large;
+    font-weight: lighter;
 }
 
 #personagens td img {
@@ -192,23 +215,43 @@ main {
     letter-spacing: 1px;
 }
 
+#informacoes-do-autor {
+    text-align: center;
+    color: white;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 1em;
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+#informacoes-do-autor img {
+    width: 200px;
+    height: 200px;
+    border: rgb(99, 17, 17) 3px solid;
+    margin: 10px 0;
+}
+
 footer {
     background-color: #000;
     color: white;
     text-align: center;
     padding: 10px;
     font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 2em;
     position: relative;
     bottom: 0;
     border-top: gray 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo-rodape {
     float: left;
     width: 30px;
-    position: relative;
-    left: 440px;
-    bottom: -5px;
+    height: 30px;
+    padding: 10px;
+    
 }
 
 #voltar-topo {
